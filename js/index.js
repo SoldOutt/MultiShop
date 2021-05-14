@@ -17,3 +17,69 @@ function Login_toggle(){
 	contain.classList.toggle('active');
 	section.classList.toggle('active');
 }
+
+//detail product
+// images
+var numImg =1;
+var buttonNextImg = document.querySelector('.detail_product-img--next')
+var buttonPrevImg = document.querySelector('.detail_product-img--prev')
+var product_Img = document.querySelector('.detail_product-img img')
+buttonNextImg.addEventListener('click', function(){
+	numImg++;
+	if(numImg>5)numImg=1;
+	var srcImg = `img/product-${numImg}.jpg`
+	product_Img.setAttribute('src', srcImg)
+
+})
+buttonPrevImg.addEventListener('click', function(){
+	numImg--;
+	if(numImg<1)numImg=5;
+	var srcImg = `img/product-${numImg}.jpg`
+	product_Img.setAttribute('src', srcImg)
+
+})
+
+// cart
+var countProduct = document.querySelector('.product_cart input#number_of_product')
+var buttonReduce = document.querySelector('.product_cart .product_reduce')
+var buttonAdd = document.querySelector('.product_cart .product_add')
+buttonReduce.addEventListener('click', function(){
+	var numProduct =parseInt(countProduct.value);
+	console.log(numProduct);
+	if(!numProduct||numProduct<=0){
+		numProduct=0;
+		countProduct.value = numProduct
+	}
+	else {
+		numProduct--
+		countProduct.value = numProduct
+	}
+})
+buttonAdd.addEventListener('click', function(){
+	var numProduct =parseInt(countProduct.value);
+	console.log(numProduct);
+	if(!numProduct&&numProduct!=0){
+		numProduct=0;
+		countProduct.value = numProduct
+	}
+	else {
+		numProduct++
+		countProduct.value = numProduct
+	}
+})
+
+
+// review
+var reviewProduct = document.querySelectorAll('.product_review-cat ul li');
+var reviewProduct_box = document.querySelectorAll('.product_review-tab>div');
+var reviewProduct_num
+console.log(reviewProduct_box);
+reviewProduct.forEach(function(x){
+	x.addEventListener('click', function(){
+		var a = document.querySelector('.product_review-cat ul li.active');
+		a.classList.remove('active')
+		x.classList.add('active')
+		reviewProduct_num = x.getAttribute('data-review')
+		console.log(reviewProduct_num)
+	})
+})
