@@ -903,8 +903,65 @@ section.active{
 	display: block;
 }
 .product_review-tab>div h3{
-
+	color: var(--dark);
 }
 .product_review-tab>div p{
 	margin-top: 1.5rem;
+}
+.customer_review{
+	display: flex;
+}
+.customer_review .customer_img{
+	margin-right: 0.5rem;
+}
+.customer_box_review{
+
+}
+.customer_box_review h5{
+	color: var(--dark);
+}
+.customer_box_review h5 span{
+	font-style: italic;
+	font-size: 1rem;
+}
+.customer_review-rating{
+	color: var(--primary-color);
+}
+.customer_box_review p{
+	line-height: 1.5rem;
+	margin-top: 0.5rem !important;
+}
+.your_rating{
+	   display: flex;
+    align-items: center;
+}
+.your_rating i{
+	color: var(--primary-color);
+}
+.your_rating p{
+	margin-top: unset !important;
+	margin-right: 1rem;
+}
+#form_review label{
+	display: block;
+}
+#form_review input,textarea{
+	width: 100%;
+	padding-left: 1rem;
+	outline: none;
+}
+#form_review input{
+	height: 2.5rem;
+}
+#form_review button {
+	display: block;
+	margin-top: 1rem;
+	outline: none;
+	background-color: var(--primary-color);
+	width: 4rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	outline: none;
+	border:none;
 }

@@ -1,7 +1,7 @@
 var categories = document.querySelector('.categories_menu');
 categories.addEventListener('click', function(){
 	var categories_list = document.querySelector('.categories_menu ul');
-	if(categories_list.style.height == '0px'||categories_list.style.height ==0){
+	if(categories_list.style.height == '0px'|| categories_list.style.height ==0){
 		var h = 41*categories_list.childElementCount;
 		categories_list.style.height = h + 'px';
 	}
@@ -80,6 +80,9 @@ reviewProduct.forEach(function(x){
 		a.classList.remove('active')
 		x.classList.add('active')
 		reviewProduct_num = x.getAttribute('data-review')
-		console.log(reviewProduct_num)
+		var reviewTap = document.querySelector('.product_review-tab');
+		var reviewTapActive = document.querySelector('.product_review-tab>div.active');
+		reviewTapActive.classList.remove('active')
+		reviewTap.children[reviewProduct_num].classList.add('active')
 	})
 })

@@ -127,20 +127,20 @@
                 </div>
             </div>
         </div>
-        <div class="product_review px-xl-5 mt-5">
+        <div class="product_review px-xl-5 mt-5 pt-5 p-3">
             <div class="product_review-cat">
                 <ul>
-                    <li class="active">Description</li>
-                    <li>Information</li>
-                    <li>Reviews(<span>1</span>)</li>
+                    <li data-review="0" class="active">Description</li>
+                    <li data-review="1">Information</li>
+                    <li data-review="2">Reviews(<span>1</span>)</li>
                 </ul>
                 <div class="product_review-tab">
-                    <div data-review="0" class="active">
+                    <div class="active">
                         <h3>Product Description</h3>
                         <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
                         <p>Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.</p>
                     </div>
-                    <div data-review='1' class="">
+                    <div class="">
                         <h3>Additional Information</h3>
                         <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
                         <div class="product_review-information row">
@@ -158,7 +158,50 @@
                             </div>
                         </div>
                     </div>
-                    <div data-review='2' class=""></div>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>1 review for "Product Name"</h3>
+                                <div class="customer_review">
+                                    <div class="customer_img">
+                                        <img src="img/user.jpg" alt="">
+                                    </div>
+                                    <div class="customer_box_review">
+                                        <h5>John Doe <span> - 01 Jan 2045</span></h5>
+                                        <div class="customer_review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Leave a review</h3>
+                                <form id="form_review" action="">
+                                    <div class="your_rating">
+                                        <p>Your Rating * :</p>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <label for="write_review">Your Review *</label>
+                                    <textarea id="write_review"></textarea>
+                                    <label for="write_name">Your Name *</label>
+                                    <input type="text" id="write_name">
+                                    <label for="write_email">Your Email *</label>
+                                    <input type="email" id="write_email">
+                                    <button>Post</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
