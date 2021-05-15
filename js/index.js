@@ -1,7 +1,7 @@
 var categories = document.querySelector('.categories_menu');
 categories.addEventListener('click', function(){
 	var categories_list = document.querySelector('.categories_menu ul');
-	if(categories_list.style.height == '0px'){
+	if(categories_list.style.height == '0px'||categories_list.style.height ==0){
 		var h = 41*categories_list.childElementCount;
 		categories_list.style.height = h + 'px';
 	}
