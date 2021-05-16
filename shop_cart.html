@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="logo">
+                <a href="index.html">
+                    <p>multi<span>shop</span></p>
+                </a>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" id="search_input" placeholder="Tìm kiếm">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="login">
+                <a href="login.html"><i class="fas fa-user"></i>Đăng nhập</a>
+            </div>
+        </div>
+        <!-- navbar -->
+        <div class="nav_bar container-fluid px-xl-5 ">
+            <div class="row">
+                <div class="nav_bar-categories col-lg-3 col-md-4 col-sm-6">
+                    <div class="categories_menu">
+                        <p><i class="fas fa-bars"></i>Categories</p>
+                        <i class="far fa-chevron-down"></i>
+                        <ul class="categories_list">
+                            <li><a href="">Shirts</a></li>
+                            <li><a href="">Jeans</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Jumpsuits</a></li>
+                            <li><a href="">Dresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_bar-list col-lg-9 col-md-8 col-sm-6">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="" href="shop.html">Shop</a></li>
+                        <li><a href="">Page</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <div class="user_product">
+                        <a href="#" class="user_like">
+                            <i class="fas fa-heart"></i>
+                            <span class="number_like">0</span>
+                        </a>
+                        <a href="shop_cart.html" class="user_buy">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="number_buy">0</span>
+                        </a>
+                    </div>
+                    <div class="hide_lg login">
+                        <a href="login.html" class="">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping_cart container-fluid px-xl-5 mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <table>
+                        <thead>
+                            <td>Products</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Total</td>
+                            <td>Remove</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="img/product-1.jpg" alt="">Product Name
+                                </td>
+                                <td>$150</td>
+                                <td>
+                                    <div class="product_number">
+                                        <button class="product_reduce">-</button>
+                                        <input type="text" id="number_of_product" value="0">
+                                        <button class="product_add">+</button>
+                                    </div>
+                                </td>
+                                <td>$150</td>
+                                <td><button><span>x</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/product-1.jpg" alt="">Product Name
+                                </td>
+                                <td>$150</td>
+                                <td>
+                                    <div class="product_number">
+                                        <button class="product_reduce">-</button>
+                                        <input type="text" id="number_of_product" value="0">
+                                        <button class="product_add">+</button>
+                                    </div>
+                                </td>
+                                <td>$150</td>
+                                <td><button><span>x</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/product-1.jpg" alt="">Product Name
+                                </td>
+                                <td>$150</td>
+                                <td>
+                                    <div class="product_number">
+                                        <button class="product_reduce">-</button>
+                                        <input type="text" id="number_of_product" value="0">
+                                        <button class="product_add">+</button>
+                                    </div>
+                                </td>
+                                <td>$150</td>
+                                <td><button><span>x</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/product-1.jpg" alt="">Product Name
+                                </td>
+                                <td>$150</td>
+                                <td>
+                                    <div class="product_number">
+                                        <button class="product_reduce">-</button>
+                                        <input type="text" id="number_of_product" value="0">
+                                        <button class="product_add">+</button>
+                                    </div>
+                                </td>
+                                <td>$150</td>
+                                <td><button><span>x</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/product-1.jpg" alt="">Product Name
+                                </td>
+                                <td>$150</td>
+                                <td>
+                                    <div class="product_number">
+                                        <button class="product_reduce">-</button>
+                                        <input type="text" id="number_of_product" value="0">
+                                        <button class="product_add">+</button>
+                                    </div>
+                                </td>
+                                <td>$150</td>
+                                <td><button><span>x</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/product-1.jpg" alt="">Product Name
+                                </td>
+                                <td>$150</td>
+                                <td>
+                                    <div class="product_number">
+                                        <button class="product_reduce">-</button>
+                                        <input type="text" id="number_of_product" value="0">
+                                        <button class="product_add">+</button>
+                                    </div>
+                                </td>
+                                <td>$150</td>
+                                <td><button><span>x</span></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4">
+                    <div class="coupon_code">
+                        <input type="text" placeholder="Coupon Code">
+                        <button>Apply Coupon</button>
+                    </div>
+                    <div class="pay_cart">
+                        <div class="cart_summary">
+                            <h3>CART SUMMARY</h3>
+                        </div>
+                        <div class="cart_total">
+                            <div class="">
+                                <p>Subtotal</p>
+                                <p>$150</p>
+                            </div>
+                            <div class="">
+                                <p>Shipping</p>
+                                <p>$10</p>
+                            </div>
+                            <div class="cart_buy">
+                                <div class="">
+                                    <p>Total</p>
+                                    <p>$160</p>
+                                </div>
+                                <button>Buy it</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer container-fluid mt-5 pt-5">
+            <div class="row px-xl-5 pt-5 pb-4">
+                <div class="footer_get_touch col-lg-4 col-md-12">
+                    <div class="footer_name">
+                        <h3>Get in touch</h3>
+                        <p>No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</p>
+                    </div>
+                    <div class="footer_contact">
+                        <p><i class="fas fa-map-marker-alt"></i>Liền Hà,Đông Anh, Hà Nội</p>
+                        <p><i class="fas fa-envelope"></i>boychauphong2001@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i>0346663207</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 row">
+                    <div class="quick_shop col-lg-4 col-md-4 col-sm-12">
+                        <h3>Quick Shop</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Home</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Our Shop</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Shop Detail</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Shopping Cart</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Checkout</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="my_account col-lg-4 col-md-4 col-sm-12">
+                        <h3>Quick Shop</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Home</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Our Shop</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Shop Detail</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Shopping Cart</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Checkout</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsleter col-lg-4 col-md-4 col-sm-12">
+                        <h3>NEWSLETTER</h3>
+                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                        <form action="#">
+                            <input type="text" placeholder="Your Email Add">
+                            <button>Sign Up</button>
+                        </form>
+                        <div class="follow">
+                            <h3>Follow us</h3>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="far fa-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
