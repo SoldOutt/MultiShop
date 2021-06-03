@@ -8,7 +8,13 @@ categories.addEventListener('click', function() {
         categories_list.style.height = '0';
     }
 })
-
+var navMobile = document.querySelector('.nav_bar-mobile')
+// window.addEventListener('click', function(){
+//  navMobile.classList.remove('active')    
+// })
+navMobile.addEventListener('click', function() {
+    navMobile.classList.toggle('active')
+})
 // SignIn-SignUp
 function Login_toggle() {
     var contain = document.querySelector('section .contain');
@@ -73,6 +79,23 @@ product_number.forEach(function(x) {
 })
 
 
+var listProduct_Buy = document.querySelectorAll('.shopping_cart tbody tr')
+var totalCart = 0
+if (listProduct_Buy) {
+    listProduct_Buy.forEach(function(item) {
+        item.children[2].children[0].addEventListener('click', () => {
+            totalCart -= parseInt(item.children[3].innerHTML)
+            var price = item.children[1].innerHTML
+            var count = item.children[2].children[0].children[1].value
+            var sumPriceOfItem = price * count
+            item.children[3].innerHTML = sumPriceOfItem
+            totalCart += parseInt(item.children[3].innerHTML)
+            document.querySelector('#total_cart').innerHTML = totalCart
+        })
+        totalCart += parseInt(item.children[3].innerHTML)
+        document.querySelector('#total_cart').innerHTML = totalCart
+    })
+}
 // review
 var reviewProduct = document.querySelectorAll('.product_review-cat ul li');
 var reviewProduct_box = document.querySelectorAll('.product_review-tab>div');
@@ -88,5 +111,25 @@ reviewProduct.forEach(function(x) {
         var reviewTapActive = document.querySelector('.product_review-tab>div.active');
         reviewTapActive.classList.remove('active')
         reviewTap.children[reviewProduct_num].classList.add('active')
+    })
+})
+
+
+
+//admin
+var adminControl = document.querySelectorAll('.admin_control ul li')
+var viewData = document.querySelectorAll('.data>table')
+console.log(viewData)
+adminControl.forEach(function(x) {
+    x.addEventListener('click', function() {
+        var a = document.querySelector('.admin_control ul li.active')
+        a.classList.remove('active')
+        x.classList.add('active')
+        var dataReview = x.getAttribute('data_review')
+        console.log(dataReview)
+        var data_Table = document.querySelector('.data>table.active')
+        data_Table.classList.remove('active')
+        viewData[dataReview].classList.add('active')
+
     })
 })

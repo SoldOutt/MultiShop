@@ -25,3 +25,6 @@ html{
 .hide_lg{
 	display: none;
 }
+.vnd::after{
+	content: 'đ'
+}

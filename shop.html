@@ -55,7 +55,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a class="active" href="shop.html">Shop</a></li>
                         <li><a href="">Page</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <div class="user_product">
                         <a href="#" class="user_like">
@@ -66,6 +66,14 @@
                             <i class="fas fa-shopping-cart"></i>
                             <span class="number_buy">0</span>
                         </a>
+                    </div>
+                    <div class="nav_bar-mobile"><i class="fas fa-bars"></i>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="active" href="shop.html">Shop</a></li>
+                            <li><a href="">Page</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                     <div class="hide_lg login">
                         <a href="login.html" class="">Đăng nhập</a>
@@ -81,12 +89,26 @@
                             <h4>filter by price</h4>
                         </div>
                         <div class="filter_options">
-                            <div class="option_check"><input type="checkbox" name="filter_price" checked>All price</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">$0-$100</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">$100-$200</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">$300-$400</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">$400-$500</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">greater than 500</div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" checked id="price_1">
+                                <label for="price_1">All price</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="price_2">
+                                <label for="price_2">$100-$200</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="price_3">
+                                <label for="price_3">$200-$300</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="price_4">
+                                <label for="price_4">$300-$400</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="price_5">
+                                <label for="price_5"> >500 </label>
+                            </div>
                         </div>
                     </div>
                     <div class="filter_color box_filter">
@@ -94,12 +116,30 @@
                             <h4>filter by color</h4>
                         </div>
                         <div class="filter_options">
-                            <div class="option_check"><input type="checkbox" name="filter_color" checked>All color</div>
-                            <div class="option_check"> <input type="checkbox" name="filter_color" value="">Black</div>
-                            <div class="option_check"> <input type="checkbox" name="filter_color" value="">White</div>
-                            <div class="option_check"><input type="checkbox" name="filter_color" value="">Red</div>
-                            <div class="option_check"><input type="checkbox" name="filter_color" value="">Blue</div>
-                            <div class="option_check"><input type="checkbox" name="filter_color" value="">Green</div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_color" id="color_1" checked>
+                                <label for="color_1">All color</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_color" id="color_2" value="">
+                                <label for="color_2">Black</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_color" id="color_3" value="">
+                                <label for="color_3">White</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_color" id="color_4" value="">
+                                <label for="color_4">Red</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_color" id="color_5" value="">
+                                <label for="color_5">Blue</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_color" id="color_6" value="">
+                                <label for="color_6">Green</label>
+                            </div>
                         </div>
                     </div>
                     <div class="filter_color box_filter">
@@ -107,12 +147,30 @@
                             <h4>filter by size</h4>
                         </div>
                         <div class="filter_options">
-                            <div class="option_check"><input type="checkbox" name="filter_price" checked>All size</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">XS</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">S</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">M</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">L</div>
-                            <div class="option_check"><input type="checkbox" name="filter_price" value="">XL</div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" checked id="size_1">
+                                <label for="size_1">All size</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="size_2">
+                                <label for="size_2">XS</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="size_3">
+                                <label for="size_3">S</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="size_4">
+                                <label for="size_4">M</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="size_5">
+                                <label for="size_5">L</label>
+                            </div>
+                            <div class="option_check">
+                                <input type="checkbox" name="filter_price" id="size_6">
+                                <label for="size_6">XL</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +201,7 @@
                     </div>
                     <div class="contain">
                         <div class="product_list row mb-4">
-                            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                                 <div class="box_product">
                                     <div class="product_img mb-3">
                                         <img src="img/product-1.jpg" alt="">
@@ -170,7 +228,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                                 <div class="box_product">
                                     <div class="product_img mb-3">
                                         <img src="img/product-2.jpg" alt="">
@@ -197,7 +255,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                                 <div class="box_product">
                                     <div class="product_img mb-3">
                                         <img src="img/product-1.jpg" alt="">
@@ -224,7 +282,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                                 <div class="box_product">
                                     <div class="product_img mb-3">
                                         <img src="img/product-3.jpg" alt="">
@@ -251,7 +309,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                                 <div class="box_product">
                                     <div class="product_img mb-3">
                                         <img src="img/product-1.jpg" alt="">
@@ -305,7 +363,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                                 <div class="box_product">
                                     <div class="product_img mb-3">
                                         <img src="img/product-1.jpg" alt="">

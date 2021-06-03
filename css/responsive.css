@@ -39,11 +39,33 @@
 	}
 }
 @media screen and (max-width: 575px){
+	.nav_bar-list{
+		flex-direction: unset;
+	}
 	.nav_bar-categories{
 		display: none;
 	}
 	.login a{
 		color: #fff;
 		line-height: 70px;
+	}
+	.nav_bar-mobile{
+		display: block;
+		font-size: 2rem;
+    	color: var(--primary-color);
+    	cursor: pointer;
+	}
+	.nav_bar-mobile ul{
+		display: block;
+	    position: absolute;
+	    z-index: 999;
+	    background-color: var(--dark);
+	    left: -50%;
+	    width: 50%;
+	    top: 100%;
+	    transition: 0.6s;
+	}
+	.nav_bar-mobile.active ul{
+		left: 0%;
 	}
 }

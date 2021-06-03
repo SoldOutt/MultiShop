@@ -55,7 +55,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a class="" href="shop.html">Shop</a></li>
                         <li><a href="">Page</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="user_product">
                         <a href="#" class="user_like">
@@ -72,7 +72,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a class="" href="shop.html">Shop</a></li>
                             <li><a href="">Page</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="active" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="hide_lg login">
@@ -81,136 +81,28 @@
                 </div>
             </div>
         </div>
-    </div>
-        <div class="shopping_cart container-fluid px-xl-5 mt-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <table>
-                        <thead>
-                            <td>Products</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
-                            <td>Remove</td>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="img/product-1.jpg" alt="">Product Name
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td>
-                                    <div class="product_number">
-                                        <button class="product_reduce">-</button>
-                                        <input type="text" class="number_of_product" value="0">
-                                        <button class="product_add">+</button>
-                                    </div>
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td><button><span>x</span></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/product-1.jpg" alt="">Product Name
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td>
-                                    <div class="product_number">
-                                        <button class="product_reduce">-</button>
-                                        <input type="text" class="number_of_product" value="0">
-                                        <button class="product_add">+</button>
-                                    </div>
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td><button><span>x</span></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/product-1.jpg" alt="">Product Name
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td>
-                                    <div class="product_number">
-                                        <button class="product_reduce">-</button>
-                                        <input type="text" class="number_of_product" value="0">
-                                        <button class="product_add">+</button>
-                                    </div>
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td><button><span>x</span></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/product-1.jpg" alt="">Product Name
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td>
-                                    <div class="product_number">
-                                        <button class="product_reduce">-</button>
-                                        <input type="text" class="number_of_product" value="0">
-                                        <button class="product_add">+</button>
-                                    </div>
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td><button><span>x</span></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/product-1.jpg" alt="">Product Name
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td>
-                                    <div class="product_number">
-                                        <button class="product_reduce">-</button>
-                                        <input type="text" class="number_of_product" value="0">
-                                        <button class="product_add">+</button>
-                                    </div>
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td><button><span>x</span></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="img/product-1.jpg" alt="">Product Name
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td>
-                                    <div class="product_number">
-                                        <button class="product_reduce">-</button>
-                                        <input type="text" class="number_of_product" value="0">
-                                        <button class="product_add">+</button>
-                                    </div>
-                                </td>
-                                <td class='vnd'>150</td>
-                                <td><button><span>x</span></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-lg-4">
-                    <div class="coupon_code">
-                        <input type="text" placeholder="Coupon Code">
-                        <button>Apply Coupon</button>
+        <div class="container-fluid  contact px-xl-5 mt-5 ">
+            <div class="contact_title">
+                <h3>CONTACT US</h3>
+            </div>
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-lg-7 p-3">
+                        <form action="">
+                            <input type="text" name="customer_name" placeholder="Your name">
+                            <input type="email" name="customer_email" placeholder="Your email">
+                            <input type="text" name="customer_subject" placeholder="Subject">
+                            <textarea name="message" name="customer_message" placeholder="Message"></textarea>
+                            <button>Send message</button>
+                        </form>
                     </div>
-                    <div class="pay_cart">
-                        <div class="cart_summary">
-                            <h3>CART SUMMARY</h3>
-                        </div>
-                        <div class="cart_total">
-                            <div class="">
-                                <p>Subtotal</p>
-                                <p id="total_cart" class="vnd">150</p>
-                            </div>
-                            <div class="">
-                                <p>Shipping</p>
-                                <p>$10</p>
-                            </div>
-                            <div class="cart_buy">
-                                <div class="">
-                                    <p>Total</p>
-                                    <p>$160</p>
-                                </div>
-                                <button>Buy it</button>
+                    <div class="col-lg-5 p-3">
+                        <div class="contact_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7442.584327199716!2d105.8994929!3d21.1407682!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1621260965820!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="mt-5 contact_address">
+                                <p><i class="fas fa-map-marker-alt"></i>Liên Hà,Đông Anh, Hà Nội</p>
+                                <p><i class="fas fa-envelope"></i>boychauphong2001@gmail.com</p>
+                                <p><i class="fas fa-phone-alt"></i>0346663207</p>
                             </div>
                         </div>
                     </div>
