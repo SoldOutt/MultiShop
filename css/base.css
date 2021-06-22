@@ -16,10 +16,10 @@ html{
 }
 @keyframes up{
 	0%{
-		transform: translateY(-15px);
+		transform: translateY(20px);
 	}
 	100%{
-		transform: translateY(0);
+		transform: translateY(0px);
 	}
 }
 .hide_lg{

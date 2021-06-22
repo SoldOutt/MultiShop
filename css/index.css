@@ -367,7 +367,6 @@ ul {
     transition: 0.3s ease-in;
     opacity: 0;
 }
-
 .action {
     padding: 10px;
     border: 1px solid var(--dark);
@@ -375,18 +374,32 @@ ul {
     transition: 0.3s;
     text-decoration: none;
     color: var(--dark);
-    animation: up ease-in 0.1s;
-}
-
-.action:hover {
-    animation: up ease-in 0.1s;
+    transition: 0.2s ease-in;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .action:hover {
     color: var(--primary-color);
     background-color: var(--dark);
 }
-
+.box_product:hover .action{
+    animation: up 0.2s ease-in;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.product_action .action:nth-child(1){
+    animation-delay: 0.05s;
+}
+.product_action .action:nth-child(2){
+    animation-delay: 0.1s;
+}
+.product_action .action:nth-child(3){
+    animation-delay: 0.15s;
+}
+.product_action .action:nth-child(4){
+    animation-delay: 0.2s;
+}
 .product_infor {
     text-align: center;
 }
@@ -1400,9 +1413,10 @@ textarea {
 .data>table{
 	display: none;
 	/*width: 100%;*/
+
 }
 .data table.active{
-	display: block;
+	display: inline-table;
 }
 .data table td{
 	text-align: center;
